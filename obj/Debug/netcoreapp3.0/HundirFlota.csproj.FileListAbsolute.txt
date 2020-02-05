@@ -1,0 +1,11 @@
+/Users/manuelugidosfernandez/Projects/HundirFlota/HundirFlota/obj/Debug/netcoreapp3.0/HundirFlota.csprojAssemblyReference.cache
+/Users/manuelugidosfernandez/Projects/HundirFlota/HundirFlota/obj/Debug/netcoreapp3.0/HundirFlota.AssemblyInfoInputs.cache
+/Users/manuelugidosfernandez/Projects/HundirFlota/HundirFlota/obj/Debug/netcoreapp3.0/HundirFlota.AssemblyInfo.cs
+/Users/manuelugidosfernandez/Projects/HundirFlota/HundirFlota/bin/Debug/netcoreapp3.0/HundirFlota
+/Users/manuelugidosfernandez/Projects/HundirFlota/HundirFlota/bin/Debug/netcoreapp3.0/HundirFlota.deps.json
+/Users/manuelugidosfernandez/Projects/HundirFlota/HundirFlota/bin/Debug/netcoreapp3.0/HundirFlota.runtimeconfig.json
+/Users/manuelugidosfernandez/Projects/HundirFlota/HundirFlota/bin/Debug/netcoreapp3.0/HundirFlota.runtimeconfig.dev.json
+/Users/manuelugidosfernandez/Projects/HundirFlota/HundirFlota/bin/Debug/netcoreapp3.0/HundirFlota.dll
+/Users/manuelugidosfernandez/Projects/HundirFlota/HundirFlota/bin/Debug/netcoreapp3.0/HundirFlota.pdb
+/Users/manuelugidosfernandez/Projects/HundirFlota/HundirFlota/obj/Debug/netcoreapp3.0/HundirFlota.dll
+/Users/manuelugidosfernandez/Projects/HundirFlota/HundirFlota/obj/Debug/netcoreapp3.0/HundirFlota.pdb

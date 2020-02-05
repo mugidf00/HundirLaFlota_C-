@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/manuelugidosfernandez/Projects/HundirFlota/HundirFlota/HundirFlota.csproj": {}
+  },
+  "projects": {
+    "/Users/manuelugidosfernandez/Projects/HundirFlota/HundirFlota/HundirFlota.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/manuelugidosfernandez/Projects/HundirFlota/HundirFlota/HundirFlota.csproj",
+        "projectName": "HundirFlota",
+        "projectPath": "/Users/manuelugidosfernandez/Projects/HundirFlota/HundirFlota/HundirFlota.csproj",
+        "packagesPath": "/Users/manuelugidosfernandez/.nuget/packages/",
+        "outputPath": "/Users/manuelugidosfernandez/Projects/HundirFlota/HundirFlota/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/manuelugidosfernandez/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
