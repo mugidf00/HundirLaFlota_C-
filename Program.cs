@@ -43,14 +43,40 @@ namespace HundirFlota
                     Console.WriteLine("Introduce el número de filas del tablero:");
                     int nfilas = Int32.Parse(Console.ReadLine());
 
+                    if (nfilas < 8)
+                    {
+                        do
+                        {
+
+                            Console.WriteLine("Introduce el número de filas del tablero:");
+
+                            nfilas = Int32.Parse(Console.ReadLine());
+
+                        } while (nfilas < 8);
+
+                    }
+
                     Console.WriteLine("Introduce el número de columnas del tablero:");
                     int ncolumnas = Int32.Parse(Console.ReadLine());
+
+                    if(ncolumnas < 8){
+
+                        do
+                        {
+                            Console.WriteLine("Introduce el número de columnas del tablero");
+
+                            ncolumnas = Int32.Parse(Console.ReadLine());
+
+                        } while (ncolumnas < 8);
+
+                    }
 
                     hundir_la_flota(opc, nfilas, ncolumnas);
 
                 }
                 else if (opc == 2) {
-
+                    //TODO
+                    /*Implementar lo que hace aquí.*/
                     Console.WriteLine("Se ha elegido jugar jugador Vs. Jugador");
 
                 }
@@ -61,9 +87,11 @@ namespace HundirFlota
             if (opc == 3) {
 
                 Console.WriteLine("Volver");
+
             }
 
             return opc;
+
         }
 
        static void hundir_la_flota(int opcion, int f, int c) {
@@ -82,16 +110,31 @@ namespace HundirFlota
             Console.WriteLine("Selecciona si deseas colocar barcos de forma manual o automática.");
             Console.WriteLine("1. Será colocar barcos de forma manual. 2. Será colocar barcos de forma automática");
 
-            do
-            {
+            opc_colocar_barcos = Int32.Parse(Console.ReadLine());
+
+            while (opc_colocar_barcos != 1 && opc_colocar_barcos != 2) {
+
+                Console.WriteLine("Aquí la mangaba, a ver ahora....");
+                Console.WriteLine("Introduce la opción nuevamente");
                 opc_colocar_barcos = Int32.Parse(Console.ReadLine());
 
-                
+            }
+            if (opc_colocar_barcos == 1){
 
-            } while (opc_colocar_barcos != 1 || opc_colocar_barcos !=2);
+                int[,] tablero = new int[f, c];
 
-            if (opc_colocar_barcos == 1)
-            {
+                for (int i = 0; i < f; i++) {
+
+                    for(int j = 0; j < c; j++){
+
+                        tablero[i, j] = 0;
+                    }
+
+                }
+
+                imprimirTablero(tablero);
+                Console.WriteLine("Se ha pintado el tablero");
+               colocar_barcos_manualmente(tablero);
 
             }
             else if (opc_colocar_barcos == 2) {
@@ -100,21 +143,74 @@ namespace HundirFlota
 
         }
 
+        static void imprimirTablero(int[,] t) {
+
+            for (int i = 0; i < t.Length; i++) {
+
+                for (int j = 0; j < t.GetLength(1); j++) {
+
+                    Console.Write("\t" + t[i, j]);
+                }
+
+                Console.WriteLine();
+            }
+
+        }
+
         /*Esta función habrá que retocarla muy posiblemente*/
-        void colocar_barcos_manualmente(int[] t, int f, int c) {
+        static void colocar_barcos_manualmente(int[,] t) {
+
+            Console.WriteLine("Se procederá a colocar los barcos de forma manual");
+
+            int num_barcos_tam1 = 3;
+            int num_barcos_tam2 = 2;
+            int num_barcos_tam3 = 1;
+
+            /*
+             * Se podrán introducir barcos en el tablero siempre que haya barcos disponibles.
+             * Para poder introducir un barco en una casilla es necesario comprobar que esa casilla tenga un 0.
+             */
+
+            do {
+
+                Console.WriteLine("Introduce la fila y columna donde desdesas colocar el barco, fila y columna deben estar dentro del rango.");
+                int f = Int32.Parse(Console.ReadLine());
+                int c = Int32.Parse(Console.ReadLine());
+
+                for(int i = 0; i < t.Length; i++){
+
+                    for (int j = 0; j < t.GetLength(1); j++) {
+
+                        if (t[i, j] == 0) {
+
+                            Console.WriteLine("La casilla: ["+f+","+c+"] está vacía, se puede introducir un barco");
+
+                        }
+
+
+                    }
+                        
+                }
+
+
+
+
+
+            } while (num_barcos_tam1 > 0 || num_barcos_tam2 > 0 || num_barcos_tam3 > 0);
+
 
 
         }
 
         /*Esta función habrá que retocarla muy posiblemente*/
-        void colocar_barcos_automaticamente(int[] t, int f, int c) {
+        void colocar_barcos_automaticamente(int[,] t, int f, int c) {
 
 
 
         }
 
         /*Esta función habrá que retocarla muy posiblemente*/
-        void inicializar_tablero(int[] t, int f, int c) {
+        void inicializar_tablero(int[,] t, int f, int c) {
 
 
 
